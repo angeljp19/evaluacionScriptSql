@@ -44,10 +44,10 @@ VALUES ('Angel', 'Cordova', 'Av Maracay','angel@gmail.com', '0412-5254856'),
 
 INSERT INTO productos (nombre, descripcion, precio, categoria, stock) VALUES
 ('Laptop Gamer', 'Portatil con procesador i7 y RTX 3060', 200.50, 'Electronica', 10),
-('Smartphone X', 'Telefono móvil con pantalla AMOLED', 150.00, 'Electronica', 25),
+('Smartphone X', 'Telefono mÃ³vil con pantalla AMOLED', 150.00, 'Electronica', 25),
 ('Camisa manga larga', 'Camisa manga larga de caballero', 100.00, 'Camisetas', 15),
-('Silla Ergonómica', 'Silla de oficina con soporte lumbar', 300.55, 'Muebles', 8),
-('Bicicleta MTB', 'Bicicleta de montaña con marco de aluminio', 500.00, 'Deportes', 12);
+('Silla ErgonÃ³mica', 'Silla de oficina con soporte lumbar', 300.55, 'Muebles', 8),
+('Bicicleta MTB', 'Bicicleta de montaÃ±a con marco de aluminio', 500.00, 'Deportes', 12);
 
 INSERT INTO pedidos (id_cliente, fecha, estado, total) VALUES
 (1, '2025-04-10', 'Procesando', 350.50),
@@ -76,9 +76,9 @@ INSERT INTO ventas (id_pedido, id_producto, cantidad, precioVenta) VALUES
 
 -- CONSULTAS SELECT--
 --CONSULTA 1--
-/*SELECT 
+SELECT 
 c.nombre, c.apellido, c.direccion, c.correoElectronico FROM
-clientes c LEFT JOIN pedidos p ON c.id = p.id_cliente WHERE  p.fecha >= CURRENT_DATE - INTERVAL '30 days';*/
+clientes c LEFT JOIN pedidos p ON c.id = p.id_cliente WHERE  p.fecha >= CURRENT_DATE - INTERVAL '30 days';
 
 --CONSULTA 2--
 SELECT 
